@@ -21,7 +21,8 @@ namespace MD5
 			foreach (string arg in argList)
 			{
 				string checksum;
-				if (File.Exists(arg)) {
+				if (File.Exists(arg))
+				{
 					checksum = Hash.ComputeMD5(File.OpenRead(arg));
 					if (verbose) { Console.Write("File: "); }
 				}
